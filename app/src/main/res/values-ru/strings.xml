@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="log_enable_title">Включить логи</string>
+    <string name="launcher_toast_grant_permission">Для работы с медиасессиями предоставьте приложению необходимое разрешение</string>
+    <string name="launcher_toast_all_ok">Всё работает! Никаких действий не требуется</string>
+
+    <string name="service_active">GMediaProxy активен</string>
+    <string name="grant_notification_access">Для корректной работы предоставьте приложению доступ к уведомлениям</string>
+    <string name="settings">Настройки</string>
+    <string name="logs">Отладка</string>
+    <string name="collect_debug_info">Сбор логов работы приложения. Включайте только когда нужно снять логи</string>
+    <string name="display_as_title">Иконка виджета</string>
+    <string name="display_as_subtitle">Отображать как один из предустановленных системных плееров</string>
+    <string name="display_like_instead_of_previous_title">Лайк вместо кнопки назад</string>
+    <string name="display_like_instead_of_previous_subtitle">Заменить кнопку перемотки к предыдущему, вместо этого отображать кнопку лайка, также отображает лайк в бегущей строке сверху</string>
+    <string name="show_broadcast_hint">Показать API</string>
+    <string name="hide_broadcast_hint">Скрыть API</string>
+    <string name="failed_to_confirm_like">Не удалось подтвердить изменение лайка</string>
+    <string name="toggle_like">Поставить лайк</string>
+    <string name="open_current_player">Открыть плеер</string>
+    <string name="like_icon_action_desc">Действие при нажатии на иконку лайка в виджете и бегущей строке</string>
+    <string name="send_intent">Отправить интент</string>
+    <string name="like_button_action">Нажатие на лайк</string>
+
+    <string name="broadcast_intents_hint"><![CDATA[<strong>Широковещательные интенты в это приложение</strong>
+<br>
+<br>
+В MacroDroid: Действия -> Отправить интент
+<br>
+<strong>Цель</strong>: Broadcast<br>
+<strong>Пакет</strong>: com.geely.online.service<br>
+<br>
+<strong>Действие:</strong> com.salat.gmproxy.DISABLE — не проксировать реальную медиасессию в систему; действуют только MEDIA_UPDATE.<br>
+<br>
+<strong>Действие:</strong> com.salat.gmproxy.ENABLE — снова включить проксирование медиасессии.<br>
+<br>
+<strong>Действие:</strong> com.salat.gmproxy.MEDIA_UPDATE<br>
+<strong>Дополнения:</strong> title, artist, album, cover (строка URL или путь), isPlaying (логическое), progressMs, durationMs (long, мс), forceMetadata (логическое, необязательно)<br>
+<br>
+<br>
+<strong>Широковещательный интент из этого приложения</strong><br><br>
+При действии «Отправить интент» при нажатии лайка отправляется broadcast, который можно поймать в другом приложении:<br>
+<strong>Действие:</strong> com.salat.gmproxy.LIKE — зарегистрируйте BroadcastReceiver (или поймайте в MacroDroid) и обработайте его получение.<br>
+]]></string>
+</resources>

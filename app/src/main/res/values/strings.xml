@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">GMediaProxy</string>
+    <string name="log_enable_title">Enable logs</string>
+    <string name="share_logs_button">Share logs</string>
+    <string name="share_logs_chooser">Share logs</string>
+    <string name="launcher_toast_grant_permission">To work with media sessions, grant the app the required permission.</string>
+    <string name="launcher_toast_all_ok">Everything works! No action required.</string>
+
+    <string name="service_active">GMediaProxy is active</string>
+    <string name="grant_notification_access">For proper operation, grant the app \"notification access\"</string>
+    <string name="settings">Settings</string>
+    <string name="logs">Logs</string>
+    <string name="collect_debug_info">Collect debug information</string>
+    <string name="display_as_title">Display as</string>
+    <string name="display_as_subtitle">The system will assume music is playing from this app.</string>
+    <string name="display_like_instead_of_previous_title">Like instead of "Previous"</string>
+    <string name="display_like_instead_of_previous_subtitle">Replace the skip-to-previous button with a like button; the like state is also shown in the top marquee.</string>
+    <string name="show_broadcast_hint">Show broadcast intents</string>
+    <string name="hide_broadcast_hint">Hide broadcast intents</string>
+    <string name="failed_to_confirm_like">Failed to confirm like change</string>
+    <string name="toggle_like">Like / Unlike</string>
+    <string name="open_current_player">Open now playing</string>
+    <string name="like_icon_action_desc">The action that will be performed when tapping the like icon in the widget and marquee</string>
+    <string name="send_intent">Send Intent</string>
+    <string name="like_button_action">Like button action</string>
+
+    <string name="broadcast_intents_hint"><![CDATA[<strong>Broadcast intents to this app</strong>
+<br>
+<br>
+In MacroDroid: Actions -> Send Intent
+<br>
+<strong>Target</strong>: Broadcast<br>
+<strong>Package</strong>: com.geely.online.service<br>
+<br>
+<strong>Action:</strong> com.salat.gmproxy.DISABLE — stop forwarding the real media session to the binder; only MEDIA_UPDATE apply.<br>
+<br>
+<strong>Action:</strong> com.salat.gmproxy.ENABLE — resume forwarding from the media session.<br>
+<br>
+<strong>Action:</strong> com.salat.gmproxy.MEDIA_UPDATE<br>
+<strong>Extras:</strong> title, artist, album, cover (URL or path string), isPlaying (boolean), progressMs, durationMs (long, ms), forceMetadata (boolean, optional)<br>
+<br>
+<br>
+<strong>Broadcast intent from this app</strong><br>
+When the like button action is set to Send intent, the app sends a broadcast you can receive in another app:<br>
+<strong>Action:</strong> com.salat.gmproxy.LIKE — register a BroadcastReceiver (or catch it in MacroDroid) and react when it is received.<br>
+]]></string>
+</resources>
